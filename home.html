@@ -6,8 +6,8 @@
     <title>Discover – Elite Helmet Exchange</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* ── Promo Banner ── */
-        .promo-banner {
+        /* ── Promo Strip ── */
+        .promo-strip {
             background: #d4af37;
             text-align: center;
             padding: 12px 20px;
@@ -18,13 +18,13 @@
             color: #000;
         }
 
-        /* ── Ad Cards ── */
-        .ads-section {
+        /* ── Promo Tiles ── */
+        .promo-section {
             padding: 80px 20px;
             background: #fff;
         }
 
-        .ads-grid {
+        .promo-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 20px;
@@ -32,7 +32,7 @@
             margin: 0 auto;
         }
 
-        .ad-card {
+        .promo-tile {
             position: relative;
             overflow: hidden;
             min-height: 340px;
@@ -40,7 +40,7 @@
             align-items: flex-end;
         }
 
-        .ad-card img {
+        .promo-tile img {
             position: absolute;
             inset: 0;
             width: 100%;
@@ -49,23 +49,23 @@
             transition: transform 0.6s;
         }
 
-        .ad-card:hover img { transform: scale(1.05); }
+        .promo-tile:hover img { transform: scale(1.05); }
 
-        .ad-card::after {
+        .promo-tile::after {
             content: "";
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 60%);
         }
 
-        .ad-content {
+        .promo-content {
             position: relative;
             z-index: 2;
             padding: 30px;
             color: #fff;
         }
 
-        .ad-tag {
+        .promo-badge {
             font-size: 0.7rem;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -74,16 +74,16 @@
             margin-bottom: 8px;
         }
 
-        .ad-content h3 {
+        .promo-content h3 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
             font-weight: 300;
             margin-bottom: 15px;
         }
 
-        .ad-card.small { min-height: 200px; }
+        .promo-tile.small { min-height: 200px; }
 
-        .ads-right {
+        .promo-side {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -206,7 +206,7 @@
         }
 
         @media (max-width: 900px) {
-            .ads-grid { grid-template-columns: 1fr; }
+            .promo-grid { grid-template-columns: 1fr; }
             .testimonial-grid { grid-template-columns: 1fr; }
             .stats-strip { flex-wrap: wrap; }
             .stat-block { border-right: none; border-bottom: 1px solid #1a1a1a; max-width: 100%; }
@@ -215,7 +215,7 @@
 </head>
 <body>
 
-    <div class="promo-banner">✦ Free Worldwide Shipping on Orders Over $300 ✦</div>
+    <div class="promo-strip">✦ Free Worldwide Shipping on Orders Over $300 ✦</div>
 
     <nav class="navbar">
         <div class="nav-container">
@@ -236,30 +236,30 @@
         <p>Explore · Inspire · Ride</p>
     </div>
 
-    <!-- Ad Cards -->
-    <section class="ads-section">
-        <div class="ads-grid">
-            <div class="ad-card">
+    <!-- Promo Tiles -->
+    <section class="promo-section">
+        <div class="promo-grid">
+            <div class="promo-tile">
                 <img src="images/cover.png" alt="New Arrivals">
-                <div class="ad-content">
-                    <span class="ad-tag">New Arrivals</span>
+                <div class="promo-content">
+                    <span class="promo-badge">New Arrivals</span>
                     <h3>Fresh Drops<br>This Week</h3>
                     <a href="collection.html" class="cta-btn">Shop Now</a>
                 </div>
             </div>
-            <div class="ads-right">
-                <div class="ad-card small">
+            <div class="promo-side">
+                <div class="promo-tile small">
                     <img src="images/helm1.png" alt="AGV Collection">
-                    <div class="ad-content">
-                        <span class="ad-tag">Spotlight</span>
+                    <div class="promo-content">
+                        <span class="promo-badge">Spotlight</span>
                         <h3>AGV Collection</h3>
                         <a href="collection.html" class="btn-small">Explore</a>
                     </div>
                 </div>
-                <div class="ad-card small">
+                <div class="promo-tile small">
                     <img src="images/helm2.png" alt="Shoei">
-                    <div class="ad-content">
-                        <span class="ad-tag">Up to 20% Off</span>
+                    <div class="promo-content">
+                        <span class="promo-badge">Up to 20% Off</span>
                         <h3>Shoei Sale</h3>
                         <a href="collection.html" class="btn-small">Shop Sale</a>
                     </div>
