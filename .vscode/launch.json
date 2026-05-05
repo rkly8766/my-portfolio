@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch index.html",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "file": "${workspaceFolder}/portfolio/index.html",
+            "firefoxExecutable": "C:\\Users\\Kristopher\\AppData\\Local\\Microsoft\\WindowsApps\\firefox.exe"
+        }
+    ]
+}
